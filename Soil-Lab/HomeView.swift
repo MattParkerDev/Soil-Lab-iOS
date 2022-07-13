@@ -8,34 +8,31 @@
 import SwiftUI
 
 struct HomeView: View {
+    let icons = [
+        ("Moisture Content", "testtube.2"),
+        ("MDD Curve", "testtube.2"),
+        ("Concrete MPA", "testtube.2"),
+        ("Slip Values", "testtube.2"),
+        ("Drilling", "testtube.2"),
+        ("Coring", "testtube.2"),
+        ("Slip Testing", "testtube.2"),
+        ("Settings", "gear")
+        ]
     let columns = [
-        GridItem(.fixed(100)),
-        GridItem(.fixed(100)),
-        GridItem(.fixed(100))
+        GridItem(.fixed(120), spacing: 5),
+        GridItem(.fixed(120), spacing: 5),
+        GridItem(.fixed(120), spacing: 5)
     ]
     var body: some View {
         VStack {
             Text("Soil Lab Tools")
                 .font(.title)
             Spacer()
-            LazyVGrid(columns: columns) {
-                Text("Moisture Content")
-                    .frame(width: 100, height: 100)
-                Text("MDD Curve")
-                    .frame(width: 100, height: 100)
-                Text("Concrete MPA")
-                    .frame(width: 100, height: 100)
-                Text("Slip Values")
-                    .frame(width: 100, height: 100)
-                Text("Drilling")
-                    .frame(width: 100, height: 100)
-                Text("Coring")
-                    .frame(width: 100, height: 100)
-                Text("Drilling")
-                    .frame(width: 100, height: 100)
-                Text("Slip Testing") //Checklist
-                    .frame(width: 100, height: 100)
-                
+            LazyVGrid(columns: columns, spacing: 5) {
+                ForEach(icons, id: \.0) { (label, imagename) in
+                    HomeIconView(label: label, imagename: imagename)
+                    
+                }
             }
             Spacer()
         }
