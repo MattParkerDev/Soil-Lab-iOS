@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		55999263287EBF9F000D1B27 /* Soil_LabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55999262287EBF9F000D1B27 /* Soil_LabApp.swift */; };
-		55999265287EBF9F000D1B27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55999264287EBF9F000D1B27 /* ContentView.swift */; };
 		55999267287EBFA0000D1B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55999266287EBFA0000D1B27 /* Assets.xcassets */; };
 		5599926A287EBFA0000D1B27 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55999269287EBFA0000D1B27 /* Preview Assets.xcassets */; };
+		55999272287EC02C000D1B27 /* SoilLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55999270287EC02C000D1B27 /* SoilLabApp.swift */; };
+		55999273287EC02C000D1B27 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55999271287EC02C000D1B27 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5599925F287EBF9F000D1B27 /* Soil-Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Soil-Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		55999262287EBF9F000D1B27 /* Soil_LabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soil_LabApp.swift; sourceTree = "<group>"; };
-		55999264287EBF9F000D1B27 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		55999266287EBFA0000D1B27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55999269287EBFA0000D1B27 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		55999270287EC02C000D1B27 /* SoilLabApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoilLabApp.swift; sourceTree = "<group>"; };
+		55999271287EC02C000D1B27 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +51,8 @@
 		55999261287EBF9F000D1B27 /* Soil-Lab */ = {
 			isa = PBXGroup;
 			children = (
-				55999262287EBF9F000D1B27 /* Soil_LabApp.swift */,
-				55999264287EBF9F000D1B27 /* ContentView.swift */,
+				55999271287EC02C000D1B27 /* HomeView.swift */,
+				55999270287EC02C000D1B27 /* SoilLabApp.swift */,
 				55999266287EBFA0000D1B27 /* Assets.xcassets */,
 				55999268287EBFA0000D1B27 /* Preview Content */,
 			);
@@ -99,6 +99,7 @@
 				TargetAttributes = {
 					5599925E287EBF9F000D1B27 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -137,8 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55999265287EBF9F000D1B27 /* ContentView.swift in Sources */,
-				55999263287EBF9F000D1B27 /* Soil_LabApp.swift in Sources */,
+				55999272287EC02C000D1B27 /* SoilLabApp.swift in Sources */,
+				55999273287EC02C000D1B27 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +265,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Soil-Lab/Preview Content\"";
@@ -283,6 +285,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "parker.Soil-Lab";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -293,6 +296,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Soil-Lab/Preview Content\"";
