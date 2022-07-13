@@ -12,12 +12,12 @@ struct MoistureView: View {
     var body: some View {
         VStack {
             Text("Weight of Tin")
-            TextField("Test", text: $input)
-                .frame(width: 200, height: 50)
+            TextField("", text: $input)
+                .frame(width: 250, height: 70)
                 .keyboardType(.numberPad)
                 .background(
                     RoundedRectangle(cornerRadius: 10)
-                        .foregroundColor(.blue)
+                        .stroke(Color.blue, lineWidth: 3)
                 )
         }
         
