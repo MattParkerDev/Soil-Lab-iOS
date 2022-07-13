@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     let icons = [
-        ("Moisture Content", "drop", AnyView(MoistureView())),
+        ("Moisture", "drop", AnyView(MoistureView())),
         ("MDD Curve", "point.topleft.down.curvedto.point.bottomright.up", AnyView(MDDView())),
         ("Concrete MPA", "cylinder", AnyView(ConcreteView())),
         ("Slip Values", "number", AnyView(SlipValuesView())),
@@ -19,15 +19,16 @@ struct HomeView: View {
         ("Settings", "gear", AnyView(SettingsView()))
         ]
     let columns = [
-        GridItem(.fixed(120), spacing: 5),
-        GridItem(.fixed(120), spacing: 5),
-        GridItem(.fixed(120), spacing: 5)
+        GridItem(.flexible(), spacing: 10),
+        GridItem(.flexible(), spacing: 10),
+        GridItem(.flexible(), spacing: 10)
     ]
     var body: some View {
         NavigationView {
             VStack {
+                Spacer()
                 Text("Soil Lab Tools")
-                    .font(.title)
+                    .font(.largeTitle)
                 Spacer()
                 LazyVGrid(columns: columns, spacing: 5) {
                     ForEach(icons, id: \.0) { (label, imagename, navlink) in
@@ -42,7 +43,9 @@ struct HomeView: View {
                 Spacer()
             }
             .navigationBarHidden(true)
+            
         }
+        .padding(10)
     }
 }
 

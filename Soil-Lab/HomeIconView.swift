@@ -11,20 +11,24 @@ struct HomeIconView: View {
     var label: String
     var imagename: String
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             Image(systemName: imagename)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 80, height: 80)
-                .padding(.top, 5)
+                .foregroundColor(Color.black)
+                .padding(20)
+                .frame(minWidth: 50, idealWidth: 120, maxWidth: 120, minHeight: 50, idealHeight: 120, maxHeight: 120)
+                .background(
+                    RoundedRectangle(cornerRadius: 15)
+                        .foregroundColor(.blue)
+                        .aspectRatio(1, contentMode: .fit)
+                )
             Text(label)
-                .font(.system(size: 14))
+                .font(.system(size: 16))
+                .padding(.top, 2)
+                .padding(.bottom, 10)
         }
-        .frame(width: 120, height: 120)
-        .background(
-            RoundedRectangle(cornerRadius: 15)
-                .foregroundColor(.gray)
-        )
+        
     }
 }
 

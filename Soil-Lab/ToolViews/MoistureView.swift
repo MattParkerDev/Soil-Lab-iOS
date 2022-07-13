@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct MoistureView: View {
+    @State var input: String = ""
     var body: some View {
-        Text("Moisture Content")
+        VStack {
+            Text("Weight of Tin")
+            TextField("Test", text: $input)
+                .frame(width: 200, height: 50)
+                .keyboardType(.numberPad)
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .foregroundColor(.blue)
+                )
+        }
+        
     }
 }
 
