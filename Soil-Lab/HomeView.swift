@@ -9,14 +9,14 @@ import SwiftUI
 
 struct HomeView: View {
     let icons = [
-        ("Moisture Content", "testtube.2"),
-        ("MDD Curve", "testtube.2"),
-        ("Concrete MPA", "testtube.2"),
-        ("Slip Values", "testtube.2"),
-        ("Drilling", "testtube.2"),
-        ("Coring", "testtube.2"),
-        ("Slip Testing", "testtube.2"),
-        ("Settings", "gear")
+        ("Moisture Content", "drop", AnyView(MoistureView())),
+        ("MDD Curve", "point.topleft.down.curvedto.point.bottomright.up", AnyView(MDDView())),
+        ("Concrete MPA", "cylinder", AnyView(ConcreteView())),
+        ("Slip Values", "number", AnyView(SlipValuesView())),
+        ("Drilling", "bus.fill", AnyView(DrillingView())),
+        ("Coring", "car.fill", AnyView(CoringView())),
+        ("Slip Testing", "faxmachine", AnyView(SlipTestingView())),
+        ("Settings", "gear", AnyView(SettingsView()))
         ]
     let columns = [
         GridItem(.fixed(120), spacing: 5),
@@ -24,17 +24,24 @@ struct HomeView: View {
         GridItem(.fixed(120), spacing: 5)
     ]
     var body: some View {
-        VStack {
-            Text("Soil Lab Tools")
-                .font(.title)
-            Spacer()
-            LazyVGrid(columns: columns, spacing: 5) {
-                ForEach(icons, id: \.0) { (label, imagename) in
-                    HomeIconView(label: label, imagename: imagename)
-                    
+        NavigationView {
+            VStack {
+                Text("Soil Lab Tools")
+                    .font(.title)
+                Spacer()
+                LazyVGrid(columns: columns, spacing: 5) {
+                    ForEach(icons, id: \.0) { (label, imagename, navlink) in
+                        NavigationLink(destination: navlink) {
+                            HomeIconView(label: label, imagename: imagename)
+                                .foregroundColor(.primary)
+                        }
+                        
+                        
+                    }
                 }
+                Spacer()
             }
-            Spacer()
+            .navigationBarHidden(true)
         }
     }
 }

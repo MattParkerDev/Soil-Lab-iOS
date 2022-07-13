@@ -12,6 +12,14 @@
 		55999272287EC02C000D1B27 /* SoilLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55999270287EC02C000D1B27 /* SoilLabApp.swift */; };
 		55999273287EC02C000D1B27 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55999271287EC02C000D1B27 /* HomeView.swift */; };
 		55999275287EC1BA000D1B27 /* HomeIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55999274287EC1BA000D1B27 /* HomeIconView.swift */; };
+		55999277287ED2EF000D1B27 /* MoistureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55999276287ED2EF000D1B27 /* MoistureView.swift */; };
+		5599927A287ED449000D1B27 /* MDDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55999279287ED449000D1B27 /* MDDView.swift */; };
+		5599927C287ED456000D1B27 /* ConcreteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5599927B287ED456000D1B27 /* ConcreteView.swift */; };
+		5599927E287ED46A000D1B27 /* SlipValuesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5599927D287ED46A000D1B27 /* SlipValuesView.swift */; };
+		55999280287ED4BE000D1B27 /* DrillingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5599927F287ED4BE000D1B27 /* DrillingView.swift */; };
+		55999282287ED4CE000D1B27 /* CoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55999281287ED4CE000D1B27 /* CoringView.swift */; };
+		55999284287ED4D9000D1B27 /* SlipTestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55999283287ED4D9000D1B27 /* SlipTestingView.swift */; };
+		55999286287ED4F9000D1B27 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55999285287ED4F9000D1B27 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +29,14 @@
 		55999270287EC02C000D1B27 /* SoilLabApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoilLabApp.swift; sourceTree = "<group>"; };
 		55999271287EC02C000D1B27 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		55999274287EC1BA000D1B27 /* HomeIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeIconView.swift; sourceTree = "<group>"; };
+		55999276287ED2EF000D1B27 /* MoistureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoistureView.swift; sourceTree = "<group>"; };
+		55999279287ED449000D1B27 /* MDDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDDView.swift; sourceTree = "<group>"; };
+		5599927B287ED456000D1B27 /* ConcreteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteView.swift; sourceTree = "<group>"; };
+		5599927D287ED46A000D1B27 /* SlipValuesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipValuesView.swift; sourceTree = "<group>"; };
+		5599927F287ED4BE000D1B27 /* DrillingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillingView.swift; sourceTree = "<group>"; };
+		55999281287ED4CE000D1B27 /* CoringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoringView.swift; sourceTree = "<group>"; };
+		55999283287ED4D9000D1B27 /* SlipTestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipTestingView.swift; sourceTree = "<group>"; };
+		55999285287ED4F9000D1B27 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +69,11 @@
 		55999261287EBF9F000D1B27 /* Soil-Lab */ = {
 			isa = PBXGroup;
 			children = (
+				55999270287EC02C000D1B27 /* SoilLabApp.swift */,
 				55999271287EC02C000D1B27 /* HomeView.swift */,
 				55999274287EC1BA000D1B27 /* HomeIconView.swift */,
-				55999270287EC02C000D1B27 /* SoilLabApp.swift */,
+				55999285287ED4F9000D1B27 /* SettingsView.swift */,
+				55999278287ED2F4000D1B27 /* ToolViews */,
 				55999266287EBFA0000D1B27 /* Assets.xcassets */,
 				55999268287EBFA0000D1B27 /* Preview Content */,
 			);
@@ -68,6 +86,20 @@
 				55999269287EBFA0000D1B27 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		55999278287ED2F4000D1B27 /* ToolViews */ = {
+			isa = PBXGroup;
+			children = (
+				55999276287ED2EF000D1B27 /* MoistureView.swift */,
+				55999279287ED449000D1B27 /* MDDView.swift */,
+				5599927B287ED456000D1B27 /* ConcreteView.swift */,
+				5599927D287ED46A000D1B27 /* SlipValuesView.swift */,
+				5599927F287ED4BE000D1B27 /* DrillingView.swift */,
+				55999281287ED4CE000D1B27 /* CoringView.swift */,
+				55999283287ED4D9000D1B27 /* SlipTestingView.swift */,
+			);
+			path = ToolViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +173,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55999277287ED2EF000D1B27 /* MoistureView.swift in Sources */,
+				5599927A287ED449000D1B27 /* MDDView.swift in Sources */,
 				55999275287EC1BA000D1B27 /* HomeIconView.swift in Sources */,
+				5599927E287ED46A000D1B27 /* SlipValuesView.swift in Sources */,
 				55999272287EC02C000D1B27 /* SoilLabApp.swift in Sources */,
+				55999284287ED4D9000D1B27 /* SlipTestingView.swift in Sources */,
+				55999282287ED4CE000D1B27 /* CoringView.swift in Sources */,
+				55999280287ED4BE000D1B27 /* DrillingView.swift in Sources */,
 				55999273287EC02C000D1B27 /* HomeView.swift in Sources */,
+				5599927C287ED456000D1B27 /* ConcreteView.swift in Sources */,
+				55999286287ED4F9000D1B27 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

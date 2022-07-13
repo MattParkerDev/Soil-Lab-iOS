@@ -14,8 +14,8 @@ struct HomeIconView: View {
         VStack {
             Image(systemName: imagename)
                 .resizable()
-                .aspectRatio(1, contentMode: .fit)
-                .frame(width: 80)
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 80, height: 80)
                 .padding(.top, 5)
             Text(label)
                 .font(.system(size: 14))
@@ -30,6 +30,6 @@ struct HomeIconView: View {
 
 struct HomeIconView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeIconView(label: "Moisture Content", imagename: "testtube.2")
+        HomeIconView(label: "Moisture Content", imagename: "cylinder")
     }
 }
