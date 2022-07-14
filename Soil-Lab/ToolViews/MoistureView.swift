@@ -23,6 +23,11 @@ struct MoistureView: View {
                 TextField("", value: $tinMass, format: .number)
                     .focused($tinIsFocused)
                     .styleTextField()
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                            tinIsFocused.toggle()
+                        }
+                    }
             }
             HStack {
                 Text("Mass of Tin\n+ Wet Soil")
@@ -58,7 +63,6 @@ struct MoistureView: View {
                     }
             }
         }
-        
     }
 }
 
