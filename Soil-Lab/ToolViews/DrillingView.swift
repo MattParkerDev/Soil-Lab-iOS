@@ -9,7 +9,21 @@ import SwiftUI
 
 struct DrillingView: View {
     var body: some View {
-        Text("Drilling")
+            List {
+                HStack {
+                    Image(systemName: "checkmark.circle.fill")
+                        .foregroundColor(.blue)
+                    Text("Cold Asphalt")
+                }
+                HStack {
+                    Image(systemName: "circle")
+                        .foregroundColor(.blue)
+                    Text("Small Bags")
+                }
+            }
+            //.listStyle(PlainListStyle())
+        .background(Color.red)
+        .navigationTitle("Drilling Checklist")
     }
 }
 
