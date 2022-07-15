@@ -12,10 +12,10 @@ struct HomeView: View {
         ("Moisture", "drop", AnyView(MoistureView())),
         ("MDD Curve", "point.topleft.down.curvedto.point.bottomright.up", AnyView(MDDView())),
         ("Concrete MPA", "cylinder", AnyView(ConcreteView())),
-        ("Slip Values", "number", AnyView(SlipValuesView())),
         ("Drilling", "bus.fill", AnyView(DrillingView())),
         ("Coring", "car.fill", AnyView(CoringView())),
         ("Slip Testing", "faxmachine", AnyView(SlipTestingView())),
+        ("Slip Values", "number", AnyView(SlipValuesView())),
         ("Settings", "gear", AnyView(SettingsView()))
     ]
     let columns = [

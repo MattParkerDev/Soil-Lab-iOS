@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct SlipTestingView: View {
+    @State var listArray: [CheckListItem] =
+    ["Machine", "Water", "Sliders", "Level", "Thermometer", "Tiles", "Brush", "Foam", "Paperwork"]
+        .map {CheckListItem.init(name: $0)}
     var body: some View {
-        Text("Slip Testing")
+        VStack {
+            CheckListView(items: $listArray)
+        }
+        .navigationTitle("Slip Testing Checklist")
     }
 }
 

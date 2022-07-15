@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct CoringView: View {
+    @State var listArray: [CheckListItem] =
+    ["Small Bags", "Hessian Bags", "Water", "Fuel", "Core Barrels", "Paperwork", "Cold Asphalt", "Old Cores"]
+        .map {CheckListItem.init(name: $0)}
     var body: some View {
-        Text("Coring")
+        VStack {
+            CheckListView(items: $listArray)
+        }
+        .navigationTitle("Coring Checklist")
     }
 }
 
