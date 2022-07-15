@@ -17,7 +17,7 @@ struct HomeView: View {
         ("Coring", "car.fill", AnyView(CoringView())),
         ("Slip Testing", "faxmachine", AnyView(SlipTestingView())),
         ("Settings", "gear", AnyView(SettingsView()))
-        ]
+    ]
     let columns = [
         GridItem(.flexible(), spacing: 10),
         GridItem(.flexible(), spacing: 10),
@@ -36,15 +36,13 @@ struct HomeView: View {
                             HomeIconView(label: label, imagename: imagename)
                                 .foregroundColor(.primary)
                         }
-                        
-                        
                     }
                 }
+                .padding(10)
                 Spacer()
             }
             .navigationBarHidden(true)
         }
-        .padding(10)
     }
 }
 

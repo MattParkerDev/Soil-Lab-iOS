@@ -21,8 +21,6 @@ struct DrillingView: View {
                     Text("Small Bags")
                 }
             }
-            //.listStyle(PlainListStyle())
-        .background(Color.red)
         .navigationTitle("Drilling Checklist")
     }
 }
