@@ -20,6 +20,8 @@
 		55999282287ED4CE000D1B27 /* CoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55999281287ED4CE000D1B27 /* CoringView.swift */; };
 		55999284287ED4D9000D1B27 /* SlipTestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55999283287ED4D9000D1B27 /* SlipTestingView.swift */; };
 		55999286287ED4F9000D1B27 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55999285287ED4F9000D1B27 /* SettingsView.swift */; };
+		559DFDAD2881894900276BA0 /* CheckListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559DFDAC2881894900276BA0 /* CheckListView.swift */; };
+		559DFDAF28818B3E00276BA0 /* CheckListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559DFDAE28818B3E00276BA0 /* CheckListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		55999281287ED4CE000D1B27 /* CoringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoringView.swift; sourceTree = "<group>"; };
 		55999283287ED4D9000D1B27 /* SlipTestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipTestingView.swift; sourceTree = "<group>"; };
 		55999285287ED4F9000D1B27 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		559DFDAC2881894900276BA0 /* CheckListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListView.swift; sourceTree = "<group>"; };
+		559DFDAE28818B3E00276BA0 /* CheckListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 				55999271287EC02C000D1B27 /* HomeView.swift */,
 				55999274287EC1BA000D1B27 /* HomeIconView.swift */,
 				55999285287ED4F9000D1B27 /* SettingsView.swift */,
+				559DFDAC2881894900276BA0 /* CheckListView.swift */,
+				559DFDB028818B8D00276BA0 /* Models */,
 				55999278287ED2F4000D1B27 /* ToolViews */,
 				55999266287EBFA0000D1B27 /* Assets.xcassets */,
 				55999268287EBFA0000D1B27 /* Preview Content */,
@@ -100,6 +106,14 @@
 				55999283287ED4D9000D1B27 /* SlipTestingView.swift */,
 			);
 			path = ToolViews;
+			sourceTree = "<group>";
+		};
+		559DFDB028818B8D00276BA0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				559DFDAE28818B3E00276BA0 /* CheckListItem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55999277287ED2EF000D1B27 /* MoistureView.swift in Sources */,
+				559DFDAF28818B3E00276BA0 /* CheckListItem.swift in Sources */,
 				5599927A287ED449000D1B27 /* MDDView.swift in Sources */,
 				55999275287EC1BA000D1B27 /* HomeIconView.swift in Sources */,
 				5599927E287ED46A000D1B27 /* SlipValuesView.swift in Sources */,
@@ -184,6 +199,7 @@
 				55999273287EC02C000D1B27 /* HomeView.swift in Sources */,
 				5599927C287ED456000D1B27 /* ConcreteView.swift in Sources */,
 				55999286287ED4F9000D1B27 /* SettingsView.swift in Sources */,
+				559DFDAD2881894900276BA0 /* CheckListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

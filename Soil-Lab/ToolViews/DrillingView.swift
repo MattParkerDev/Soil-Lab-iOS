@@ -8,19 +8,13 @@
 import SwiftUI
 
 struct DrillingView: View {
+    @State var listArray: [CheckListItem] =
+    ["Small Bags", "Big Bags","Hessian Bags", "Zip Ties", "Ruler", "Paperwork", "Cold Asphalt"]
+        .map {CheckListItem.init(name: $0)}
     var body: some View {
-            List {
-                HStack {
-                    Image(systemName: "checkmark.circle.fill")
-                        .foregroundColor(.blue)
-                    Text("Cold Asphalt")
-                }
-                HStack {
-                    Image(systemName: "circle")
-                        .foregroundColor(.blue)
-                    Text("Small Bags")
-                }
-            }
+        VStack {
+            CheckListView(items: $listArray)
+        }
         .navigationTitle("Drilling Checklist")
     }
 }
