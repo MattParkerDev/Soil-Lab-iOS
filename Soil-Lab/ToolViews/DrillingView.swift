@@ -16,6 +16,7 @@ struct DrillingView: View {
             CheckListView(items: $listArray)
         }
         .navigationTitle("Drilling Checklist")
+        .navigationBarTitleDisplayMode(.large)
     }
 }
 

@@ -16,6 +16,7 @@ struct CoringView: View {
             CheckListView(items: $listArray)
         }
         .navigationTitle("Coring Checklist")
+        .navigationBarTitleDisplayMode(.large)
     }
 }
 

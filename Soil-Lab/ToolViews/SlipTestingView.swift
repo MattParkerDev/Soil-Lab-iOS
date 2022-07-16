@@ -16,6 +16,7 @@ struct SlipTestingView: View {
             CheckListView(items: $listArray)
         }
         .navigationTitle("Slip Testing Checklist")
+        .navigationBarTitleDisplayMode(.large)
     }
 }
 
