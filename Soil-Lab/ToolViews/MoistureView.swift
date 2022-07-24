@@ -72,7 +72,7 @@ struct MoistureView_Previews: PreviewProvider {
     }
 }
 
-extension View {
+private extension View {
     func styleTextField() -> some View {
         self
             .font(.system(size: 40))
@@ -92,7 +92,7 @@ extension View {
 }
 
 
-extension View {
+private extension View {
     func calculation(tinMass: Double, tinWetMass: Double, tinDryMass: Double) -> String {
         var mContent: Double = 0.0
         if (tinMass != 0.0 && tinWetMass != 0.0 && tinDryMass != 0.0) {
