@@ -10,14 +10,17 @@ import SwiftUI
 struct SlipValuesView: View {
     var body: some View {
         VStack {
-            Spacer()
+            //Spacer()
             Text("Slider 55")
-                .font(.headline)
+                .font(.title2)
+                .bold()
+                .padding(.top, 70)
             SliderView(surface: "P400 Sandpaper", value: "115±10", range: "105 - 125")
             SliderView(surface: "Lapping Paper", value: "55±6", range: "49 - 61")
-            Spacer()
+                .padding(.bottom, 70)
             Text("Slider 96")
-                .font(.headline)
+                .font(.title2)
+                .bold()
             SliderView(surface: "P400 Sandpaper", value: "85±10", range: "75 - 95")
             SliderView(surface: "Lapping Paper", value: "61±3", range: "58 - 64")
             Spacer()
